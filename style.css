@@ -1,51 +1,105 @@
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background: #f5f5f5;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hero {
-  background: #006d77;
-  color: #fff;
-  padding: 2rem;
+body {
+  background: #fffdf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header.hero {
+  background: url('massage-room.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #5c9470;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.sub-headline {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.value-propositions {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #fff;
   text-align: center;
 }
 
-.logo {
-  width: 80px;
-  border-radius: 8px;
+.value h3 {
+  color: #5c9470;
+  margin-bottom: 10px;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-  background: #fff;
-  margin-top: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+.services {
+  padding: 40px 20px;
+  background: #f9f9f9;
 }
 
-h1, h2 {
-  color: #006d77;
+.services h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-ul {
+.services ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
   list-style: none;
   padding: 0;
 }
 
-li {
-  padding: 0.5rem 0;
+.testimonial {
+  background: #e0f7ea;
+  padding: 40px 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: #5c9470;
+  color: white;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: #5c9470;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 20px;
   background: #333;
-  color: #fff;
-  margin-top: 1rem;
+  color: #eee;
 }
+
