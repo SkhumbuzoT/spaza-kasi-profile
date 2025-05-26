@@ -1,170 +1,77 @@
+/* Base reset and typography */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   background-color: #fffdf9;
   color: #333;
-  line-height: 1.7;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
 }
 
+/* Hero Section */
 header.hero {
-  background: url('massage-room.jpg') center/cover no-repeat;
+  background: url('https://source.unsplash.com/1600x400/?massage') center/cover no-repeat;
   color: white;
-  text-align: center;
   padding: 100px 20px;
 }
 
 header.hero h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
-header.hero p {
-  font-size: 1.3rem;
-  max-width: 600px;
-  margin: 0 auto;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+/* Buttons */
+.btn-primary,
+.btn-outline-light,
+.btn-light {
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-.btn-primary {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 14px 30px;
-  background: #7BAE98;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background 0.3s;
+/* Section Headings */
+section h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #5c9470;
 }
 
-.btn-primary:hover {
-  background: #5c9470;
-}
-
-.sub-headline {
-  text-align: center;
-  padding: 60px 20px;
-  background: #f3f3ef;
-}
-
-.sub-headline h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.sub-headline p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.value-propositions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
-  padding: 60px 20px;
-  background: #ffffff;
-  text-align: center;
-}
-
-.value {
-  flex: 1 1 250px;
-  max-width: 300px;
-}
-
-.value h3 {
+/* Value Propositions (Three Columns) */
+.value-propositions h3 {
   color: #5c9470;
   margin-bottom: 10px;
-  font-size: 1.3rem;
 }
 
-.value p {
-  color: #555;
-}
-
+/* Services Grid */
 .services {
-  padding: 60px 20px;
   background: #f9f9f9;
 }
 
-.services h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
+.card-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
 }
 
-.services ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  list-style: none;
-  padding: 0;
+/* Booking CTA Section */
+#booking {
+  background-color: #5c9470 !important;
 }
 
-.services li {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
+#booking h2,
+#booking p {
+  margin-bottom: 1rem;
 }
 
-.services li:hover {
-  transform: translateY(-5px);
-}
-
-.testimonial {
-  background: #e3f7f0;
-  padding: 60px 20px;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-.cta {
-  text-align: center;
-  padding: 60px 20px;
-  background: #7BAE98;
-  color: white;
-}
-
-.cta h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.btn-secondary {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 24px;
-  background: white;
-  color: #5c9470;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background 0.3s;
-}
-
-.btn-secondary:hover {
-  background: #f0f0f0;
-}
-
+/* Footer */
 footer {
-  text-align: center;
-  padding: 30px 20px;
-  background: #333;
+  background-color: #333;
   color: #eee;
   font-size: 0.9rem;
 }
+
 
 
