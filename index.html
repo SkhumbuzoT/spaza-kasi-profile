@@ -1,128 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Experience deep relaxation and holistic healing at The Spirit, Johannesburg's premier massage therapy studio."/>
-  <title>The Spirit | Massage Therapy Johannesburg</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .navbar-brand {
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pipemasters Plumbing offers fast, affordable, and reliable plumbing services in Johannesburg. Call us today for 24/7 emergency service!">
+    <title>Pipemasters Plumbing | Johannesburg's Trusted Plumbers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+        header { background: #007bff; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #0056b3; padding: 10px 0; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+        .cta { background: #f8f8f8; padding: 30px; text-align: center; margin-top: 40px; }
+        .services-grid, .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        footer { background: #222; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+        .button { background: #28a745; color: #fff; padding: 10px 20px; text-decoration: none; display: inline-block; border-radius: 5px; }
+        .testimonial { background: #f0f0f0; padding: 20px; border-radius: 10px; }
+    </style>
 </head>
-<body style="font-family: 'Roboto', sans-serif;">
+<body>
+    <header>
+        <h1>Pipemasters Plumbing</h1>
+        <p>Professional Plumbing Services in Johannesburg</p>
+        <p>Call Us: <strong>087 455 6743</strong></p>
+    </header>
 
-  <!-- NAVIGATION BAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">The Spirit</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#booking">Book</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <!-- HERO -->
-  <header id="home" class="hero text-white text-center py-5" style="background: url('https://source.unsplash.com/1600x400/?massage') center/cover no-repeat;">
-    <div class="container">
-      <h1 class="display-4">Rejuvenate Your Body and Mind at The Spirit</h1>
-      <p class="lead">Experience holistic healing with our diverse massage therapies tailored to your needs.</p>
-      <a href="#booking" class="btn btn-light btn-lg mt-3">Book Your Massage Now</a>
-    </div>
-  </header>
+    <section id="home">
+        <h2>Fast, Reliable & Affordable Plumbing Solutions</h2>
+        <p>From geyser repairs to emergency plumbing, Pipemasters Plumbing is here to help you, 24/7 across Johannesburg.</p>
+        <a class="button" href="tel:0874556743">📞 Call Now</a>
+    </section>
 
-  <!-- TAGLINE -->
-  <section class="text-center py-4 bg-light">
-    <h2>Your Sanctuary for Comprehensive Massage Therapies in Johannesburg</h2>
-  </section>
-
-  <!-- SERVICES SUMMARY -->
-  <section class="container py-5">
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <h3>Diverse Range of Therapies</h3>
-        <p>From Deep Tissue to Ayurvedic massages, tailored for every wellness goal.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <h3>Experienced Therapists</h3>
-        <p>Certified professionals who offer personalized care and attention.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <h3>Convenient Booking</h3>
-        <p>Schedule your session online anytime, anywhere.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES LIST -->
-  <section id="services" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Each massage service remains unchanged -->
-        <!-- You can add "More Info" links later to expand each one -->
-        <!-- Example for 1 service shown below: -->
-        <div class="col"><div class="card h-100"><div class="card-body"><p class="card-text">Deep Tissue Massage</p></div></div></div>
-        <!-- [REPEAT FOR OTHER MASSAGES] -->
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING SECTION -->
-  <section id="booking" class="bg-success text-white text-center py-5">
-    <div class="container">
-      <h2>Ready to Feel Rejuvenated?</h2>
-      <p class="lead">Choose your favorite therapy and schedule your appointment today.</p>
-      <a href="#services" class="btn btn-light btn-lg m-2">Explore Our Services</a>
-      <a href="#newsletter" class="btn btn-outline-light btn-lg m-2">Subscribe to Wellness Tips</a>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="py-5 bg-white">
-    <div class="container">
-      <h2 class="text-center mb-4">About The Spirit</h2>
-      <p class="lead text-center">Where Touch Meets Transformation</p>
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <p>
-            At <strong>The Spirit</strong>, we believe true wellness is achieved through balance — of body, mind, and spirit. Based in Johannesburg, our studio is a sanctuary for those seeking both physical relief and inner peace.
-          </p>
-          <p>
-            Every session is guided by certified massage therapists who blend traditional techniques with a deep understanding of individual needs. Whether you're healing from stress, injury, or simply seeking rejuvenation, our therapies are designed to restore harmony and elevate your well-being.
-          </p>
-          <p>
-            From the moment you walk through our doors, our mission is clear: to help you feel deeply relaxed, reconnected, and recharged.
-          </p>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div><h3>🚿 Geyser Repairs & Installations</h3><p>We install and repair electric, gas, and solar geysers.</p></div>
+            <div><h3>🚽 Toilet & Drain Repairs</h3><p>We unblock drains and repair leaking or broken toilets.</p></div>
+            <div><h3>🔥 Emergency Plumbing</h3><p>24/7 plumbing assistance for leaks, bursts and more.</p></div>
+            <div><h3>🔧 Leak Detection</h3><p>We use advanced tech to find hidden leaks with minimal damage.</p></div>
+            <div><h3>🛁 Bathroom Renovations</h3><p>Full-service plumbing for your bathroom or kitchen remodel.</p></div>
+            <div><h3>🚰 Tap & Shower Installation</h3><p>Professional installation of water-efficient fixtures.</p></div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer id="contact" class="bg-dark text-white text-center py-3">
-    <p>© 2025 The Spirit. All rights reserved.</p>
-    <p>Email: <a href="mailto:info@thespirit.co.za" class="text-white">info@thespirit.co.za</a></p>
-  </footer>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Pipemasters Plumbing is a licensed, insured, and trusted plumbing company based in Johannesburg. With over 10 years of experience, we pride ourselves on prompt service, fair pricing, and customer satisfaction.</p>
+        <p><strong>Service Areas:</strong> Johannesburg, Sandton, Midrand, Randburg, Soweto, Centurion, Pretoria</p>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300x200" alt="Before Repair">
+            <img src="https://via.placeholder.com/300x200" alt="After Repair">
+            <img src="https://via.placeholder.com/300x200" alt="Bathroom Install">
+            <img src="https://via.placeholder.com/300x200" alt="Team on Site">
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"Prompt service, great attitude, and fair pricing. Highly recommended!"</p>
+            <p><strong>- Lerato M., Sandton</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"They fixed a pipe burst in under an hour. Lifesavers!"</p>
+            <p><strong>- Thabo N., Midrand</strong></p>
+        </div>
+        <a class="button" href="tel:0874556743">📞 Call 087 455 6743 Now</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Johannesburg, South Africa</p>
+        <p>📞 Phone: <a href="tel:0874556743">087 455 6743</a></p>
+        <p>📱 WhatsApp: <a href="https://wa.me/27874556743">Click to Chat</a></p>
+        <p>📧 Email: info@pipemastersplumbing.co.za</p>
+        <form>
+            <input type="text" placeholder="Your Name" required><br><br>
+            <input type="tel" placeholder="Phone Number" required><br><br>
+            <select required>
+                <option value="">Select a Service</option>
+                <option>Geyser Installation</option>
+                <option>Leak Repair</option>
+                <option>Emergency Plumbing</option>
+                <option>Toilet/Drain Fix</option>
+            </select><br><br>
+            <textarea placeholder="Your Message"></textarea><br><br>
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pipemasters Plumbing | Johannesburg | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
 
