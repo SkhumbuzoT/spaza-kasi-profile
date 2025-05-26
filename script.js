@@ -1,23 +1,12 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    const response = document.getElementById('form-response');
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Simulate form submission
+        response.style.display = 'block';
+        form.reset();
     });
-  });
 });
 
-// Animate elements on scroll
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animate');
-    }
-  });
-}, {
-  threshold: 0.1
-});
-
-document.querySelectorAll('.card, .value, .cta').forEach(el => observer.observe(el));
