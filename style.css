@@ -6,100 +6,165 @@
 }
 
 body {
-  background: #fffdf9;
+  background-color: #fffdf9;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 16px;
 }
 
 header.hero {
   background: url('massage-room.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 header.hero h1 {
-  font-size: 2.8em;
+  font-size: 3rem;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+header.hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 .btn-primary {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #5c9470;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #7BAE98;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #5c9470;
 }
 
 .sub-headline {
   text-align: center;
-  padding: 40px 20px;
-  background: #f5f5f5;
+  padding: 60px 20px;
+  background: #f3f3ef;
+}
+
+.sub-headline h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.sub-headline p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
 }
 
 .value-propositions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 40px 20px;
-  background: #fff;
+  gap: 30px;
+  padding: 60px 20px;
+  background: #ffffff;
   text-align: center;
+}
+
+.value {
+  flex: 1 1 250px;
+  max-width: 300px;
 }
 
 .value h3 {
   color: #5c9470;
   margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.value p {
+  color: #555;
 }
 
 .services {
-  padding: 40px 20px;
+  padding: 60px 20px;
   background: #f9f9f9;
 }
 
 .services h2 {
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .services ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   list-style: none;
   padding: 0;
 }
 
+.services li {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.services li:hover {
+  transform: translateY(-5px);
+}
+
 .testimonial {
-  background: #e0f7ea;
-  padding: 40px 20px;
+  background: #e3f7f0;
+  padding: 60px 20px;
   text-align: center;
   font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
 }
 
 .cta {
   text-align: center;
-  padding: 40px 20px;
-  background: #5c9470;
+  padding: 60px 20px;
+  background: #7BAE98;
   color: white;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .btn-secondary {
   display: inline-block;
   margin: 10px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: white;
   color: #5c9470;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #f0f0f0;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   background: #333;
   color: #eee;
+  font-size: 0.9rem;
 }
+
 
